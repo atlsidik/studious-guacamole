@@ -51,6 +51,7 @@ int main (void){
 	struct sigaction sig_a;
 	int yes =1;
 	char addr_str[INET6_ADDRSTRLEN];
+	char * buf= "Hello , you there?";
 		int rv ;
 
 	
@@ -119,7 +120,7 @@ int main (void){
 
 		 if(!fork()){
 			close(sockfd);
-			if(send(con_fd,"Hello there!", 12,0) ==-1)
+			if(send(con_fd,buf, strlen(buf),0) ==-1)
 				perror("send");
 			close (con_fd);
 			exit(0);

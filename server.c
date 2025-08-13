@@ -15,7 +15,7 @@
 #include <signal.h>
 
 #define BACKLOG 10
-#define PORT "3490"
+#define PORT "21"
 
 void sigchld_hanndler(int s){
 	(void) s;

@@ -13,7 +13,7 @@
 #include <sys/socket.h>
 #include <errno.h>
 
-#define PORT "3490"
+#define PORT "21"
 #define MAXDATASIZE 100
 
 void * get_addr(struct sockaddr * sa){

@@ -1,5 +1,5 @@
 .PHONY : generate
-generate : sender  client
+generate : sender  client listen server
 
 sender: sender.c
 client: client.c 
